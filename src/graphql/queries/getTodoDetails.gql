@@ -1,0 +1,7 @@
+query getTodoDetails($id: uuid!) {
+  todo: todos(where: {id: {_eq: $id}}) {
+    id
+    title
+    completed
+  }
+}

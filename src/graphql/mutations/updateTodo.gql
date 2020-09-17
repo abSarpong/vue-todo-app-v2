@@ -1,0 +1,8 @@
+mutation updateTodo($id: uuid!, $title: String) {
+  update_todos(where: {id: {_eq: $id}}, _set: {title: $title}) {
+    affected_rows
+    returning {
+      title
+    }
+  }
+}

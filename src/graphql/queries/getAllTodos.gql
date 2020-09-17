@@ -1,0 +1,8 @@
+query getAllTodos {
+  todos (order_by: {created_at: desc}){
+    title
+    id
+    created_at
+    completed
+  }
+}

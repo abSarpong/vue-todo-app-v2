@@ -1,0 +1,5 @@
+mutation markComplete($id: uuid!, $isCompleted: Boolean!) {
+  update_todos(where: {id: {_eq: $id}}, _set: {completed: $isCompleted}) {
+    affected_rows
+  }
+}

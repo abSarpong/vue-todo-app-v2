@@ -1,0 +1,11 @@
+mutation createTodo($title: String!) {
+  insert_todos(objects: {title: $title}) {
+    affected_rows
+    returning {
+      title
+      id
+      completed
+    }
+  }
+}
+
