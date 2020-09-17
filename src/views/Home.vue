@@ -1,8 +1,11 @@
 <template>
   <div id="app">
-    <div class="wrapper">
-      <add-to-do></add-to-do>
-      <todo-item></todo-item>
+    <div class="container">
+      <h2>Complete CRUD Todo Application</h2>
+      <div class="wrapper">
+        <add-to-do></add-to-do>
+        <todo-item></todo-item>
+      </div>
     </div>
   </div>
 </template>
@@ -20,15 +23,13 @@ export default {
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
+.container {
+  padding-top: 48px;
+  text-align: center;
+}
 .wrapper {
   width: 500px;
   margin: 0 auto;
-  padding-top: 96px;
-}
-.empty-state {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding-top: 100px;
+  padding-top: 48px;
 }
 </style>
